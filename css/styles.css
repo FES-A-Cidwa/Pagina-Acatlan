@@ -1,0 +1,16 @@
+/*
+	Menu de contenido 
+	1-colores
+
+*/
+
+/*------------    1 ------------------*/
+/*--------Colores--------------------*/
+:root{
+	--colorprincipal: #1E3C70;
+	--colorsecundario: #BB8800;
+	--colorgris: rgba(59, 64, 66, 0.4);
+	--coloraclaro: #0A7D99;
+	
+}
+/*--------Colores--------------------*/
