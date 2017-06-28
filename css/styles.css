@@ -14,6 +14,7 @@
 	--colorgris: rgba(59, 64, 66, 0.4);
 	--coloraclaro: #0A7D99;
 	--fuentePrincipal: white;
+	--fuenteSub:black;
 	
 }
 /*--------Colores--------------------*/
@@ -36,11 +37,18 @@ body{
 	display: flex;
 	justify-content: center;
 }
+
 .box{
 	width: 80%;
 	height: 100%;
 
 
+}
+.img-40{
+	width: 40%;
+}
+.img-100{
+	width: 100%;
 }
 
 /*---------------General-------*/
@@ -56,6 +64,9 @@ header{
 .logos,.menu2,.toggle-menu-2{
 	color:var(--fuentePrincipal);
 	background-color: var(--colorprincipal);
+}
+.fesa{
+	margin-top: 17px;
 }
 .menu1,.toggle-menu-1{
 	
@@ -145,3 +156,74 @@ input{
 }
 
 /*---------Menu-----------------------*/
+
+/*----slider------*/
+	.containerSlider {
+      margin: 0 auto
+    }
+  	.item img{
+  		width: 100%;
+  		height: auto;
+
+  	}
+ /*----slider---*/ 
+
+ .aviso{
+ 	
+ 	color:var(--fuentePrincipal);
+ 	width: 33%;
+ 	height: 150px;
+
+ }
+ .aviso:first-child,.aviso:nth-child(2){
+ 	border-right:  1px solid #CECECE;
+ }
+ .boxavisogris{
+ 	background-color: #CCCECD;
+ 	width: 100%;
+
+ }
+ .boxavisoblanca{
+ 	background-color: white;
+ 	width: 90%;
+ 	padding: 15px 0;
+ 	display: flex;
+
+ }
+ .avisos{
+ 	width: 100%;
+ 	background-color: #3A4040;
+ 	color:var(--fuentePrincipal);
+ 	font-size: 1.8em;
+ 	text-align: center;
+ }
+ .avisos p{
+ 	padding: 5px 0;
+ }
+ .boxredes{
+ 	background-color: #3B3E45;
+ 	width: 100%;
+ 	height: 80px;
+ }
+ .articulos{
+ 	width: 100%;
+ 	height: 500px;
+ 	align-items: center;
+
+ }
+ .articulosdentro{
+ 	width: 90%;
+ 	height: 90%;
+ 	border: solid;
+
+ }
+ .boxinfo{
+ 	background-color: #3B3E45;
+ 	width: 100%;
+ 	height: 180px;
+ }
+ footer{
+		width: 	100%;
+		height: 80px;
+		background-color: #1C3C6F;
+ }

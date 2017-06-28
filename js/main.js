@@ -1,14 +1,15 @@
- 
+
 
 //MENU
  let consulta = window.matchMedia('(max-width: 787px)');
- let t=false;
+ let t1=false;
+ let t2=false;
  consulta.addListener(mediaQuery);
 
   function mediaQuery() {
-      consulta.matches ? $('#menu1').slideToggle() : (t ? $('#menu1').slideToggle() : null);
-      consulta.matches ? $('#menu2').slideToggle() : (t ? $('#menu2').slideToggle() : null);
-      t=!t;
+      consulta.matches ? $('#menu1').slideToggle() : (t1 ? $('#menu1').slideToggle() : t1=!t1);
+      consulta.matches ? $('#menu2').slideToggle() : (t2 ? $('#menu2').slideToggle() : t2=!t2);
+
  	}
   mediaQuery();
   //closure
@@ -20,15 +21,39 @@
     }
     return closeOpen;
   }
-  let menuToggle = toggle();
+  let menu1Toggle = toggle();
+  let menu2Toggle = toggle();
 
   $('#btn-menu-1').click(function(){
 		$('#menu1').slideToggle();
-    menuToggle('#btn-menu-1');
+    menu1Toggle('#btn-menu-1');
   });
 	$('#btn-menu-2').click(function(){
 		$('#menu2').slideToggle();
-    menuToggle('#btn-menu-2');
+    menu2Toggle('#btn-menu-2');
 	});
-  		
+
 //MENU
+
+//lider
+ $(function(){
+      $("#slides").slidesjs({
+        width: 548,
+        height: 200,
+        navigation: {
+          active:true,
+          effect:"slide"
+        },
+        play:{
+          auto:true
+        }
+
+      });
+    });
+
+   
+//slider
+
+ $('#carousel').carousel({
+  interval: 2000
+ });
